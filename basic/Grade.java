@@ -1,10 +1,12 @@
+package basic;
+
 import java.util.Scanner;
 public class Grade{
 public static void main (String args[]){
 float mark;
-System.out.println("Enter your mark");
+System.out.print("Enter your mark :");
 Scanner in=new Scanner(System.in);
-mark=in.nextInt();
+mark=in.nextFloat();
 if (mark>=90 &&  mark<=100)
 {
 System.out.println("Grade A");
