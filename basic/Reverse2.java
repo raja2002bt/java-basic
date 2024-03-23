@@ -2,12 +2,12 @@ package basic;
 
 import java.util.Scanner;
 
-public class Reversenumber {
+public class Reverse2 {
 
 	public static void main(String[] args) {
-		System.out.println("Enter a number :");
-		Scanner sin=new Scanner(System.in);
-		int n=sin.nextInt();
+		System.out.print("Enter a number :");
+		Scanner in=new Scanner(System.in);
+		int n=in.nextInt();
 		int reverse=0,rem;
 		while(n!=0)
 		{
@@ -16,6 +16,7 @@ public class Reversenumber {
 			n=n/10;
 		}
 		System.out.println(reverse);
+
 	}
 
 }
