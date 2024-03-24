@@ -9,13 +9,12 @@ public class Reverse2 {
 		Scanner in=new Scanner(System.in);
 		int n=in.nextInt();
 		int reverse=0,rem;
-		while(n!=0)
+		while(n>0)
 		{
 			rem=n%10;
-			reverse=(reverse*10)+rem;
+			System.out.print(rem);
 			n=n/10;
 		}
-		System.out.println(reverse);
 
 	}
 
