@@ -10,7 +10,7 @@ public class Loan {
 	int Salary =in.nextInt();
 	System.out.print("Enter your age : ");
 	int age = in.nextInt();
-	if (Salary >=20000 && age<=25) {
+	if (Salary >=20000 || age<=25) {
 		System.out.print("Enter loan amount : ");
 		int amount=in.nextInt();
 		
