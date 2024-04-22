@@ -17,14 +17,11 @@ public class Array_Function {
 		Arrays.sort(a);
 		return a;
 	}
-
 	public static void main(String[] args) {
 		Array_Function obj=new Array_Function();
 		int arr[]=obj.sortArray();
 		System.out.println(Arrays.toString(arr));
 //		for (int a: obj.sortArray())
-//			System.out.print(a);
-
+//			System.out.print(a+" ");
 	}
-
 }
