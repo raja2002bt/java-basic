@@ -1,8 +1,8 @@
 package basic;
 
-class Shaperectangle {
+class haperectangle {
 
-	private int length, width;
+	private static int length, width;
 
 	int getLength() { // Get
 		return length;
@@ -34,7 +34,7 @@ class Shaperectangle {
 
 public class Get_Set {
 	public static void main(String[] args) {
-		Shaperectangle o = new Shaperectangle();
+		haperectangle o = new haperectangle();
 		o.setLength(40);
 		o.setWidth(20);
 		System.out.println("length : " + o.getLength());
