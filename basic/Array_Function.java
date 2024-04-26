@@ -19,9 +19,9 @@ public class Array_Function {
 	}
 	public static void main(String[] args) {
 		Array_Function obj=new Array_Function();
-		int arr[]=obj.sortArray();
-		System.out.println(Arrays.toString(arr));
-//		for (int a: obj.sortArray())
-//			System.out.print(a+" ");
+//		int arr[]=obj.sortArray();
+//		System.out.println(Arrays.toString(arr));
+		for (int a: obj.sortArray())
+			System.out.print(a+" ");
 	}
 }
