@@ -15,5 +15,6 @@ public class JdbcDemo {
         rs.next();
         String name=rs.getString(1);
         System.out.println(name);
+        con.close();
     }
 }
