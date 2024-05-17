@@ -9,8 +9,8 @@ public class JdbcDemo2 {
 //        insertmannualrecordpst();
 //        deleterecord();
 //        updaterecord();
-        callstoredprocedure();
-
+//        callstoredprocedure();
+        callstoredprocedureparameter();
     }
 
 
@@ -156,6 +156,32 @@ public class JdbcDemo2 {
 
         con.close();
 
+    }
+
+    public static  void  callstoredprocedureparameter() throws Exception{
+
+        String url = "jdbc:mysql://localhost:3306/Student1 ";
+        String username ="root";
+        String password ="9159608502";
+        int eid=8;
+        Connection con=DriverManager.getConnection(url,username,password);
+        CallableStatement cst = con.prepareCall("{call getempbyid(?)}");
+        cst.setInt(1,eid);
+        ResultSet rs = cst.executeQuery();
+        rs.next();
+        int id = rs.getInt(1);
+        String fn = rs.getString(2);
+        String ln = rs.getString(3);
+        String dpt = rs.getString(4);
+        int sal = rs.getInt(5);
+        System.out.print(id + " ");
+        System.out.print(fn + " ");
+        System.out.print(ln + " ");
+        System.out.print(dpt + " ");
+        System.out.print(sal);
+        System.out.println(" ");
+
+        con.close();
     }
 
 }
