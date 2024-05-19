@@ -131,7 +131,7 @@ public class JdbcDemo2 {
         con.close();
     }
 
-    public static void callstoredprocedure() throws Exception{
+    public static void callstoredprocedure() throws Exception{                                   //Stored Procedure
 
         String url= "jdbc:mysql://localhost:3306/Student1 ";
         String username = "root";
@@ -158,7 +158,7 @@ public class JdbcDemo2 {
 
     }
 
-    public static  void  callstoredprocedureparameter() throws Exception{
+    public static  void  callstoredprocedureparameter() throws Exception{                        //Stored procedure with parameter
 
         String url = "jdbc:mysql://localhost:3306/Student1 ";
         String username ="root";
